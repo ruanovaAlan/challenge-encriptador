@@ -24,3 +24,13 @@ button#desencriptar {
     color: #000;
     border: 1px solid #0A3871;
 }
+
+svg {
+    fill: #000;
+    width: 2rem;
+    opacity: 0.5;
+}
+
+svg:hover {
+    opacity: 1;
+}
