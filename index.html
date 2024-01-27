@@ -32,8 +32,8 @@
         </div>
         <p class="mb-4 text-center opacity-50">Solo el texto en minúsculas</p>
         <div class="d-flex gap-3 justify-content-around">
-            <button class="btn btn-lg" id="encriptar" onclick="handleEncript();">Encriptar</button>
-            <button class="btn btn-lg" id="desencriptar" onclick="handleDecript();">Desencriptar</button>
+            <button class="btn btn-lg" id="encript" onclick="handleEncript();">Encriptar</button>
+            <button class="btn btn-lg" id="decript" onclick="handleDecript();">Desencriptar</button>
         </div>
     </main>
     <footer class="d-flex justify-content-center  gap-3">
@@ -46,7 +46,10 @@
         </a>
     </footer>
 
+    <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastContainer"></div>
+
     <script src="app.js"></script>
+    <script src="toast.js"></script>
 </body>
 
 </html>

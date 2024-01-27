@@ -18,12 +18,12 @@ button {
     font-weight: 700;
 }
 
-button#encriptar {
+button#encript {
     background-color: #0A3871;
     color: #fff;
 }
 
-button#desencriptar {
+button#decript {
     background-color: #D8DFE8;
     color: #000;
     border: 1px solid #0A3871;
