@@ -14,11 +14,20 @@ function handleEncript() {
 }
 
 function handleDecript() {
-    let decriptedText = input.value;
-    for (let word in decriptLetters) {
-        if (decriptedText.search(word) !== -1) {
-            decriptedText = decriptedText.replace(word, decriptLetters[word]);
+    let encriptedWordsArray = input.value.split(' ');
+
+    function replaceKeys(word) {
+        let replaced = false;
+        for (let key in decriptLetters) {
+            if (word.includes(key)) {
+                word = word.replace(key, decriptLetters[key]);
+                replaced = true;
+            }
         }
+        return replaced ? replaceKeys(word) : word;
     }
+
+    let decriptedText = encriptedWordsArray.map(replaceKeys).join(' ');
+
     console.log(decriptedText);
 }
