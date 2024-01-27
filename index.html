@@ -7,21 +7,32 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="app.css">
     <link rel="stylesheet" href="app.js">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
     <title>Challenge Encriptador</title>
 </head>
 
-<body>
-    <header>
-        <h1>Challenge Encriptador</h1>
+<body class="d-flex flex-column">
+    <header class="my-5">
+        <img class="position-absolute top-0 left-0 py-3" src="public/Logo.svg" alt="Logo de Alura">
+        <!-- <h1 class="text-center" id="title">Challenge Encriptador</h1> -->
     </header>
-    <main>
-        <div><input type="text"></div>
-        <div>
-            <button>Encriptar</button>
-            <button>Desencriptar</button>
+    <main class="d-flex flex-column justify-content-center mb-5 w-75 mx-auto">
+        <div class="mb-3">
+            <textarea name="text-input" id="text-input" placeholder="Ingresa el texto aquí" cols="30" rows="10"
+                class="form-control h-75 text-center"></textarea>
+        </div>
+        <p class="ps-4 mb-4 ">Solo el texto en minúsculas</p>
+        <div class="d-flex gap-3 justify-content-around">
+            <button class="btn btn-lg " id="encriptar">Encriptar</button>
+            <button class="btn btn-lg btn-secondary" id="desencriptar">Desencriptar</button>
         </div>
     </main>
-    <footer>
+    <footer class="d-flex justify-content-center gap-3">
         <p>Alan Ruanova</p>
         <p>perfil github</p>
     </footer>
