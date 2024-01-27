@@ -21,10 +21,12 @@
 </head>
 
 <body class="d-flex flex-column">
+
     <header class="my-5">
         <img class="position-absolute top-0 left-0 py-3" src="public/Logo.svg" alt="Logo de Alura">
         <!-- <h1 class="text-center" id="title">Challenge Encriptador</h1> -->
     </header>
+
     <main class="d-flex flex-column justify-content-center mb-5 w-75 mx-auto">
         <div class="mb-3">
             <textarea name="text-input" id="text-input" placeholder="Ingresa el texto aquí" cols="30" rows="10"
@@ -36,6 +38,10 @@
             <button class="btn btn-lg" id="decript" onclick="handleDecript();">Desencriptar</button>
         </div>
     </main>
+
+    <section class="w-75 mx-auto text-center rounded bg-white fs-5 mb-5" id="output">
+    </section>
+
     <footer class="d-flex justify-content-center  gap-3">
         <p class="pt-1">Alan Ruanova</p>
         <a href="https://github.com/ruanovaAlan" target="_blank" alt="Link Perfil Github">

@@ -1,4 +1,6 @@
 const input = document.querySelector('#text-input');
+const output = document.getElementById('output');
+
 
 const encriptLetters = { 'e': 'enter', 'i': 'imes', 'a': 'ai', 'o': 'ober', 'u': 'ufat' }
 const decriptLetters = { 'enter': 'e', 'imes': 'i', 'ai': 'a', 'ober': 'o', 'ufat': 'u' }
@@ -12,6 +14,7 @@ function handleEncript() {
 
         }).join('');
         input.value = '';
+        setOutput(encriptedText)
         showToast('🔒 Mensaje encriptado', '🟢')
     }
 }
@@ -36,7 +39,25 @@ function handleDecript() {
         let decriptedText = encriptedWordsArray.map(replaceKeys).join(' ');
 
         input.value = '';
+        setOutput(decriptedText)
         showToast('🔓 Mensaje desencriptado', '🟢')
     }
 }
+
+function setOutput(message = '') {
+
+    let emptyOutput = `<p class="fw-bold opacity-75 m-0">Ningún mensaje fue encontrado</p>
+    <p class="opacity-50">Ingresa el texto que desees encriptar o desencriptar</p>`
+
+    let outputMessage = `<p class="fw-bold opacity-75 m-0">${message}</p>`
+
+    output.innerHTML = `
+        <div class="p-4">
+            ${output.innerText == '' ? emptyOutput : outputMessage}
+        </div>
+        `
+}
+
+setOutput();
+
 
