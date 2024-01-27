@@ -2,16 +2,20 @@ body {
     background: rgb(87, 63, 251);
     background: radial-gradient(circle, rgba(87, 63, 251, 1) 0%, rgba(70, 224, 252, 1) 100%);
     height: 100dvh;
+    font-family: 'Kanit', sans-serif;
 }
 
 textarea {
     background-color: transparent !important;
     border: none !important;
     font-size: 2rem !important;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
 }
 
 button {
     width: 15rem;
+    font-weight: 700;
 }
 
 button#encriptar {
@@ -33,4 +37,8 @@ svg {
 
 svg:hover {
     opacity: 1;
+}
+
+footer {
+    font-weight: 700;
 }
