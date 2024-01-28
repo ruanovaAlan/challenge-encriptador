@@ -23,10 +23,18 @@ button#encript {
     color: #fff;
 }
 
+button#encript:hover {
+    background-color: #1360bd;
+}
+
 button#decript {
     background-color: #D8DFE8;
     color: #000;
     border: 1px solid #0A3871;
+}
+
+button#decript:hover {
+    background-color: #aab0b7;
 }
 
 div#output-div {
@@ -70,7 +78,9 @@ footer {
         width: 80%;
     }
 
-
+    p#output-text {
+        margin-bottom: 1rem;
+    }
 }
 
 @media (min-width: 750px) {

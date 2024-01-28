@@ -70,8 +70,8 @@ function setOutput(message = '') {
     let emptyOutput = `<p class="fw-bold opacity-75 m-0">Ningún mensaje fue encontrado</p>
     <p class="opacity-50">Ingresa el texto que desees encriptar o desencriptar</p>`
 
-    let outputMessage = `<p id="output-text" class="fw-bold opacity-75 m-0">${message}</p>
-    <button id="copy-btn" class="btn btn-outline-secondary" onclick="copyText()">Copiar</button>`
+    let outputMessage = `<p id="output-text" class="fw-bold opacity-75">${message}</p>
+    <button id="copy-btn" class="btn btn-lg btn-outline-secondary" onclick="copyText()">Copiar</button>`
 
     output.innerHTML = `
         <div class="p-4 w-lg-25 mw-75" id="output-div">
