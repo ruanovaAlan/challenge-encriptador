@@ -29,6 +29,19 @@ button#decript {
     border: 1px solid #0A3871;
 }
 
+div#output-div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+button#copy-btn {
+    width: 100%;
+    margin-top: auto;
+}
+
+
+
 svg {
     fill: #000;
     width: 2rem;
@@ -41,4 +54,45 @@ svg:hover {
 
 footer {
     font-weight: 700;
+    width: 100%;
+    height: 100px;
+    background-color: #0a387170;
+    margin-top: auto;
+    bottom: 0;
+}
+
+@media (min-width: 350px) {
+    main {
+        width: 80%;
+    }
+
+    section {
+        width: 80%;
+    }
+
+
+}
+
+@media (min-width: 750px) {
+    main {
+        width: 80%;
+    }
+
+    section {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        width: 70%;
+        padding-right: 2rem;
+
+    }
+
+    section {
+        width: 30%;
+    }
+
+    div#encript-decript {}
 }

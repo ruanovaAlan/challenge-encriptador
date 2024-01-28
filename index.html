@@ -24,26 +24,27 @@
 
     <header class="my-5">
         <img class="position-absolute top-0 left-0 py-3" src="public/Logo.svg" alt="Logo de Alura">
-        <!-- <h1 class="text-center" id="title">Challenge Encriptador</h1> -->
     </header>
+    <div class="container d-flex flex-column mx-auto flex-lg-row w-100 h-xl-50" id="encript-decript">
+        <main class="d-flex flex-column h-auto mb-5 mx-auto">
+            <div class="mb-3">
+                <textarea name="text-input" id="text-input" placeholder="Ingresa el texto aquí" cols="30" rows="5"
+                    class="form-control text-center"></textarea>
+            </div>
+            <p class="mb-4 text-center opacity-50">Solo el texto en minúsculas</p>
+            <div class="d-flex gap-3 justify-content-around">
+                <button class="btn btn-lg" id="encript" onclick="handleEncript();">Encriptar</button>
+                <button class="btn btn-lg" id="decript" onclick="handleDecript();">Desencriptar</button>
+            </div>
+        </main>
 
-    <main class="d-flex flex-column justify-content-center mb-5 w-75 mx-auto">
-        <div class="mb-3">
-            <textarea name="text-input" id="text-input" placeholder="Ingresa el texto aquí" cols="30" rows="10"
-                class="form-control h-75 text-center"></textarea>
-        </div>
-        <p class="mb-4 text-center opacity-50">Solo el texto en minúsculas</p>
-        <div class="d-flex gap-3 justify-content-around">
-            <button class="btn btn-lg" id="encript" onclick="handleEncript();">Encriptar</button>
-            <button class="btn btn-lg" id="decript" onclick="handleDecript();">Desencriptar</button>
-        </div>
-    </main>
+        <section class="mx-auto text-center rounded bg-white fs-5 mb-5" id="output">
 
-    <section class="w-75 mx-auto text-center rounded bg-white fs-5 mb-5" id="output">
-    </section>
+        </section>
+    </div>
 
-    <footer class="d-flex justify-content-center  gap-3">
-        <p class="pt-1">Alan Ruanova</p>
+    <footer class="d-flex  text-center justify-content-center align-items-center gap-5">
+        <p class="pt-1 mb-0 fw-bold">Alan Ruanova</p>
         <a href="https://github.com/ruanovaAlan" target="_blank" alt="Link Perfil Github">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="fs-1">
                 <path
