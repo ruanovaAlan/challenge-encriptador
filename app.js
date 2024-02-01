@@ -5,13 +5,21 @@ const output = document.getElementById('output');
 const encriptLetters = { 'e': 'enter', 'i': 'imes', 'a': 'ai', 'o': 'ober', 'u': 'ufat' }
 const decriptLetters = { 'enter': 'e', 'imes': 'i', 'ai': 'a', 'ober': 'o', 'ufat': 'u' }
 
+
 function handleEncript() {
-    if (input.value == '') {
+    let inputValue = input.value.toLowerCase();
+
+    let regex = /^[a-z\s]*$/;
+    if (!regex.test(inputValue)) {
+        showToast('📝 Input inválido, no se permiten acentos y caracteres especiales', '🔴');
+        return;
+    }
+
+    if (inputValue == '') {
         showToast('📝 Input vacío, ingresa un mensaje', '🔴');
     } else {
-        let encriptedText = input.value.split('').map((letter) => {
+        let encriptedText = inputValue.split('').map((letter) => {
             return encriptLetters[letter] ? encriptLetters[letter] : letter;
-
         }).join('');
         input.value = '';
         setOutput(encriptedText)
